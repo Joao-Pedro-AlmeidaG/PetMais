@@ -1,0 +1,98 @@
+export const mockProducts = [
+  {
+    id: '1',
+    nome: 'Ração Golden Filhotes 15kg',
+    tipo: 'Ração',
+    precoAtual: 189.9,
+    precoPromocional: 159.9,
+    descricao:
+      'Ração completa para cães filhotes de todas as raças, formulada com proteínas de alta qualidade para apoiar o crescimento saudável.',
+    dataValidade: '2027-04-10',
+  },
+  {
+    id: '2',
+    nome: 'Ração Premier Adulto Raças Pequenas 10kg',
+    tipo: 'Ração',
+    precoAtual: 149.9,
+    precoPromocional: null,
+    descricao:
+      'Alimento completo para cães adultos de raças pequenas, com ômega 6 e 3 para pele e pelagem saudáveis.',
+    dataValidade: '2027-01-22',
+  },
+  {
+    id: '3',
+    nome: 'Ração Whiskas Peixe 3kg',
+    tipo: 'Ração',
+    precoAtual: 59.9,
+    precoPromocional: 49.9,
+    descricao: 'Ração para gatos adultos com sabor de peixe, enriquecida com vitaminas e minerais.',
+    dataValidade: '2026-12-05',
+  },
+  {
+    id: '4',
+    nome: 'Areia Sanitária Pipicat 4kg',
+    tipo: 'Higiene',
+    precoAtual: 32.9,
+    precoPromocional: 27.9,
+    descricao: 'Areia higiênica com alto poder de absorção de odores para caixas de areia de gatos.',
+    dataValidade: '2028-06-30',
+  },
+  {
+    id: '5',
+    nome: 'Shampoo Neutro Pet Clean 500ml',
+    tipo: 'Higiene',
+    precoAtual: 24.9,
+    precoPromocional: null,
+    descricao: 'Shampoo neutro para cães e gatos de todas as idades, com fórmula suave e hipoalergênica.',
+    dataValidade: '2027-09-18',
+  },
+  {
+    id: '6',
+    nome: 'Bolinha de Borracha Kong',
+    tipo: 'Brinquedo',
+    precoAtual: 39.9,
+    precoPromocional: 29.9,
+    descricao: 'Brinquedo resistente de borracha natural, ideal para morder e buscar.',
+    dataValidade: '2029-01-01',
+  },
+  {
+    id: '7',
+    nome: 'Arranhador para Gatos Torre',
+    tipo: 'Brinquedo',
+    precoAtual: 129.9,
+    precoPromocional: null,
+    descricao: 'Arranhador em formato de torre com sisal natural e bolinha suspensa para brincar.',
+    dataValidade: '2029-01-01',
+  },
+  {
+    id: '8',
+    nome: 'Coleira Ajustável de Nylon',
+    tipo: 'Acessório',
+    precoAtual: 34.9,
+    precoPromocional: null,
+    descricao: 'Coleira ajustável e resistente, disponível para pequeno, médio e grande porte.',
+    dataValidade: '2029-01-01',
+  },
+  {
+    id: '9',
+    nome: 'Comedouro Duplo Inox',
+    tipo: 'Acessório',
+    precoAtual: 45.9,
+    precoPromocional: 38.9,
+    descricao: 'Comedouro duplo em aço inox, fácil de higienizar e antiderrapante.',
+    dataValidade: '2029-01-01',
+  },
+  {
+    id: '10',
+    nome: 'Petisco Ossinho Dental',
+    tipo: 'Petisco',
+    precoAtual: 19.9,
+    precoPromocional: null,
+    descricao: 'Petisco dental que ajuda na limpeza dos dentes e higiene bucal do seu pet.',
+    dataValidade: '2027-02-14',
+  },
+];
+
+export function findProductById(id) {
+  return mockProducts.find((product) => product.id === id) || null;
+}

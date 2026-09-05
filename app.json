@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "PetMais",
+    "slug": "petmais",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.petmais.app"
+    },
+    "android": {
+      "package": "com.petmais.app"
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}
